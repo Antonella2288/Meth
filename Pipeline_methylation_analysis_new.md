@@ -13,10 +13,22 @@ meth5 create_m5 \
 ```
 ## Take column 5 from the .tsv file, sort, delete duplicates, add a new column containing the group name, exchange space with tab and then write all into a .tsv file
 ```
-cat methylation_calls_sample1_chr.tsv | cut -f5 | tail -n +2 | sort | uniq | awk '$(NF+1) = 2'| sed 's/ /\t/g' >sample1.chr_readGroup.tsv
+cat methylation_calls_sample1_chr.tsv | \
+cut -f5 | \
+tail -n +2 | \
+sort | \
+uniq | \
+awk '$(NF+1) = 2'| \
+sed 's/ /\t/g' >sample1.chr_readGroup.tsv
 ```
 ```
-cat methylation_calls_sample2_chr.tsv | cut -f5 | tail -n +2 | sort | uniq | awk '$(NF+1) = 1'| sed 's/ /\t/g' >sample2.chr_readGroup.tsv
+cat methylation_calls_sample2_chr.tsv | \
+cut -f5 | \
+tail -n +2 | \
+sort | \
+uniq | \
+awk '$(NF+1) = 1'| \
+sed 's/ /\t/g' >sample2.chr_readGroup.tsv
 ```
 ## Annotate
 ```
