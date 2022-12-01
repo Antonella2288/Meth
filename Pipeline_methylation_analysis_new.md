@@ -33,11 +33,11 @@ awk '$(NF+1) = 1'| \
 sed 's/ /\t/g' >sample2.chr_readGroup.tsv
 ```
 the output is:
+```
 read_name       group
 0000174a-d806-4e5f-933c-1e69fb483ce6    2
 00001bb2-6fd1-4c90-a7a3-446696674eb1    2
-
-
+```
 
 ## Annotate .m5 file with read group
 ```
@@ -66,12 +66,13 @@ meth5 merge_m5 \
 meth5 list_chunks \
 --input_m5_files merge_chr.m5
 ```
+```
  the output is 
 -------- merge_chr.m5 ---------
 | Chromosome | Number of chunks |
 | chr        | 9                |
 ---------------------------------
-
+```
 
 ## Run Meth-Seg
 
