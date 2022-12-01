@@ -66,8 +66,8 @@ meth5 merge_m5 \
 meth5 list_chunks \
 --input_m5_files merge_chr.m5
 ```
+ the output is:
 ```
- the output is 
 -------- merge_chr.m5 ---------
 | Chromosome | Number of chunks |
 | chr        | 9                |
